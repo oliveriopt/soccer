@@ -41,10 +41,10 @@ class CreateTable:
         """
         for team_id in self.teams:
             home = self.file.loc[(self.file["IdHomeTeam"] == team_id)].reset_index(drop=True)
-            home = home.rename(columns={"nWeekHome": "nWeek", "FTHG": "FTG_asH", "FTR": "FT_RESULT", "HTHG": "HTG_asH",
+            home = home.rename(columns={"FTHG": "FTG_asH", "FTR": "FT_RESULT", "HTHG": "HTG_asH",
                                         "HTR": "HT_RESULT", "HS": "Shoot_asH", "HST": "ShootTarget_asH",
                                         "HF": "Fouls_asH", "HC": "Corner_asH", "HY": "YellowC_asH", "HR": "RedC_asH",
-                                        "IdHomeTeam": "IdTeam", "FTAG": "FT_against_H", "HTAG": "HT_against_H",
+                                        "FTAG": "FT_against_H", "HTAG": "HT_against_H",
                                         "AS": "Shoot_against_H", "AST": "ShootTarget_against_H",
                                         "AF": "Fouls_against_H",
                                         "AC": "Corner_against_H", "AR": "RedC_againts_H", "AY": "YellowC_against_H"})
@@ -59,10 +59,10 @@ class CreateTable:
             home.loc[(home["HT_RESULT"] == "A"), "HT_RESULT"] = "Lost"
 
             away = self.file.loc[(self.file["IdAwayTeam"] == team_id)].reset_index(drop=True)
-            away = away.rename(columns={"nWeekAway": "nWeek", "FTAG": "FTG_asA", "FTR": "FT_RESULT", "HTAG": "HTG_asA",
+            away = away.rename(columns={"FTAG": "FTG_asA", "FTR": "FT_RESULT", "HTAG": "HTG_asA",
                                         "HTR": "HT_RESULT", "AS": "Shoot_asA", "AST": "ShootTarget_asA",
                                         "AF": "Fouls_asA", "AC": "Corner_asA", "AY": "YellowC_asA", "AR": "RedC_asA",
-                                        "IdAwayTeam": "IdTeam", "FTHG": "FT_against_A", "HTHG": "HT_against_A",
+                                        "FTHG": "FT_against_A", "HTHG": "HT_against_A",
                                         "HS": "Shoot_against_A", "HST": "ShootTarget_against_A",
                                         "HF": "Fouls_against_A",
                                         "HC": "Corner_against_A", "HR": "RedC_againts_A", "HY": "YellowC_against_A"})
@@ -84,49 +84,44 @@ class CreateTable:
         self.home.reset_index(drop=True)
         self.away.reset_index(drop=True)
 
-    def calculate_scores(self) -> None:
+    def calculate_cumsum(self, cumsum: pd.DataFrame, IdTeam: str, variables_analysis: list) -> None:
+        """
+        Calculate cumsum over all parameteres
+        :param cumsum: dataframe to analysis the cumsum
+        :param idTeam: home or away teams
+        :return:
+        """
 
         temp = pd.DataFrame()
         for team in self.teams:
-            team_hist = self.home.loc[self.home["IdTeam"] == team].reset_index(drop=True)
-            for item in var.analysis_per_team_home:
+            team_hist = cumsum.loc[cumsum[IdTeam] == team].reset_index(drop=True)
+            for item in variables_analysis:
                 for period in var.periods:
                     if isinstance(period, str):
                         team_hist[item + "_last_" + str(period)] = team_hist[item].cumsum(skipna=True)
-                        team_hist[item + "_last_" + str(period)] = (team_hist[
-                                                                        item + "_last_" + str(period)] -
-                                                                    team_hist[
-                                                                        item]) / (team_hist.index)
                     else:
                         team_hist[item + "_last_" + str(period)] = team_hist[item].rolling(period + 1).sum()
-                        team_hist[item + "_last_" + str(period)] = (team_hist[item + "_last_" + str(period)] -
-                                                                    team_hist[
-                                                                        item]) / period
+                    team_hist[item + "_last_" + str(period)] = team_hist[item + "_last_" + str(period)] - team_hist[
+                        item]
             temp = temp.append(team_hist)
+        return temp
+
+    def calculate_scores(self) -> None:
+        temp = CreateTable.calculate_cumsum(self, self.home, "IdHomeTeam", var.analysis_per_team_home)
         self.home = temp.copy().sort_values(by="Date").reset_index(drop=True)
 
-        temp = pd.DataFrame()
-        for team in self.teams:
-            team_hist = self.away.loc[self.away["IdTeam"] == team].reset_index(drop=True)
-
-            for item in var.analysis_per_team_away:
-                for period in var.periods:
-                    if isinstance(period, str):
-                        team_hist[item + "_last_" + str(period)] = team_hist[item].cumsum(skipna=True)
-                        team_hist[item + "_last_" + str(period)] = (team_hist[
-                                                                        item + "_last_" + str(period)] -
-                                                                    team_hist[
-                                                                        item]) / (team_hist.index)
-                    else:
-                        team_hist[item + "_last_" + str(period)] = team_hist[item].rolling(period + 1).sum()
-                        team_hist[item + "_last_" + str(period)] = (team_hist[
-                                                                        item + "_last_" + str(period)] -
-                                                                    team_hist[
-                                                                        item]) / period
-            temp = temp.append(team_hist)
+        temp = CreateTable.calculate_cumsum(self, self.away, "IdAwayTeam", var.analysis_per_team_away)
         self.away = temp.copy().sort_values(by="Date").reset_index(drop=True)
 
     def write_output(self) -> None:
-
         self.home.round(2).to_csv(var.indicators_base_cumsum + "home_" + str(self.year) + ".csv")
         self.away.round(2).to_csv(var.indicators_base_cumsum + "away_" + str(self.year) + ".csv")
+
+
+for year in var.all_years:
+    print(year)
+    table_teams = CreateTable(year)
+    table_teams.identify_teams_id()
+    table_teams.create_table_per_team()
+    table_teams.calculate_scores()
+    table_teams.write_output()
