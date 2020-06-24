@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b77b957-0290-4a84-baab-536423be1d0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/04_indicators_base_cumsum/away_2003.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/04_indicators_base_cumsum/away_2003.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/04_indicators_base_cumsum/home_2003.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/04_indicators_base_cumsum/home_2003.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/c_create_table_by_team.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/c_create_table_by_team.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +39,7 @@
       <EXTENSION ID="com.brainwy.pyvmmonitor.PyVmMonitorRunExtension">
         <option name="PyVmMonitorInitialProfileMode" value="INHERIT_GLOBAL" />
       </EXTENSION>
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/c_create_table_by_team.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/c_run_create_table_by_team.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -84,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593037280485</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Improvement of cumsum analysis of home/away teams">
+      <created>1593038188285</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593038188285</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -94,16 +98,16 @@
     <option name="LAST_COMMIT_MESSAGE" value="Improvement of cumsum analysis of home/away teams" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593027586775">
+    <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593038258419">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.830@0.23.1440.830" timestamp="1593025574786" />
-    <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.831@0.23.1440.831" timestamp="1593027586775" />
-    <state x="297" y="23" width="846" height="831" key="CommitChangelistDialog2" timestamp="1593037279477">
+    <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.831@0.23.1440.831" timestamp="1593038258419" />
+    <state x="297" y="23" width="846" height="831" key="CommitChangelistDialog2" timestamp="1593038188102">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state x="297" y="23" width="846" height="830" key="CommitChangelistDialog2/0.23.1440.830@0.23.1440.830" timestamp="1593013470680" />
-    <state x="297" y="23" width="846" height="831" key="CommitChangelistDialog2/0.23.1440.831@0.23.1440.831" timestamp="1593037279477" />
+    <state x="297" y="23" width="846" height="831" key="CommitChangelistDialog2/0.23.1440.831@0.23.1440.831" timestamp="1593038188102" />
     <state width="1419" height="215" key="GridCell.Tab.0.bottom" timestamp="1593038022297">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
