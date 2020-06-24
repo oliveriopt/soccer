@@ -84,7 +84,7 @@ class CreateTable:
         self.home.reset_index(drop=True)
         self.away.reset_index(drop=True)
 
-    def calculate_cumsum(self, cumsum: pd.DataFrame, IdTeam: str, variables_analysis: list) -> None:
+    def calculate_cumsum(self, cumsum: pd.DataFrame, Home_Away: str, variables_analysis: list) -> None:
         """
         Calculate cumsum over all parameteres
         :param cumsum: dataframe to analysis the cumsum
@@ -94,23 +94,33 @@ class CreateTable:
 
         temp = pd.DataFrame()
         for team in self.teams:
-            team_hist = cumsum.loc[cumsum[IdTeam] == team].reset_index(drop=True)
+            team_hist = cumsum.loc[cumsum["Id" + Home_Away + "Team"] == team].reset_index(drop=True)
+            print(team_hist)
             for item in variables_analysis:
                 for period in var.periods:
                     if isinstance(period, str):
-                        team_hist[item + "_last_" + str(period)] = team_hist[item].cumsum(skipna=True)
+                        team_hist[item + "_last_" + str(period) + "_cumsum"] = team_hist[item].cumsum(skipna=True)
+                        team_hist[item + "_last_" + str(period) + "_cumsum"] = team_hist[item + "_last_" + str(period) +
+                                                                                        "_cumsum"] - team_hist[item]
+                        team_hist[item + "_last_" + str(period) + "_mean"] = team_hist[item + "_last_" + str(period) + "_cumsum"] / \
+                                                                             team_hist["nWeek" + Home_Away]
                     else:
-                        team_hist[item + "_last_" + str(period)] = team_hist[item].rolling(period + 1).sum()
-                    team_hist[item + "_last_" + str(period)] = team_hist[item + "_last_" + str(period)] - team_hist[
-                        item]
+                        team_hist[item + "_last_" + str(period) + "_cumsum"] = team_hist[item].rolling(period + 1).sum()
+                        team_hist[item + "_last_" + str(period) + "_cumsum"] = team_hist[item + "_last_" + str(period) +
+                                                                                        "_cumsum"] - team_hist[item]
+                        team_hist[item + "_last_" + str(period) + "_mean"] = team_hist[item + "_last_" + str(period) + "_cumsum"] / \
+                                                                             period
+
+
+
             temp = temp.append(team_hist)
         return temp
 
     def calculate_scores(self) -> None:
-        temp = CreateTable.calculate_cumsum(self, self.home, "IdHomeTeam", var.analysis_per_team_home)
+        temp = CreateTable.calculate_cumsum(self, self.home, "Home", var.analysis_per_team_home)
         self.home = temp.copy().sort_values(by="Date").reset_index(drop=True)
 
-        temp = CreateTable.calculate_cumsum(self, self.away, "IdAwayTeam", var.analysis_per_team_away)
+        temp = CreateTable.calculate_cumsum(self, self.away, "Away", var.analysis_per_team_away)
         self.away = temp.copy().sort_values(by="Date").reset_index(drop=True)
 
     def write_output(self) -> None:
@@ -118,7 +128,7 @@ class CreateTable:
         self.away.round(2).to_csv(var.indicators_base_cumsum + "away_" + str(self.year) + ".csv")
 
 
-for year in var.all_years:
+for year in var.all_years[:1]:
     print(year)
     table_teams = CreateTable(year)
     table_teams.identify_teams_id()

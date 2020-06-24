@@ -3,74 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4b77b957-0290-4a84-baab-536423be1d0a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2003.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2003.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2004.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2004.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2005.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2005.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2006.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2006.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2007.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2007.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2008.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2008.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2009.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2009.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2010.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2010.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2011.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2011.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2012.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2012.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2013.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2013.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2014.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2014.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2015.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2015.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2016.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2016.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2017.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2017.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2018.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2018.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2019.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/odds_2019.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2003.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2003.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2004.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2004.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2005.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2005.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2006.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2006.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2007.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2007.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2008.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2008.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2009.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2009.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2010.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2010.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2011.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2011.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2012.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2012.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2013.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2013.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2014.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2014.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2015.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2015.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2016.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2016.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2017.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2017.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2018.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2018.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2019.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/02_filter_raw/stats_2019.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2003.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2003.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2004.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2004.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2005.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2005.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2006.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2006.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2007.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2007.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2008.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2008.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2009.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2009.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2010.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2010.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2011.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2011.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2012.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2012.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2013.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2013.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2014.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2014.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2015.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2015.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2016.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2016.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2017.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2017.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2018.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2018.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2019.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/odds_2019.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2003.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2003.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2004.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2004.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2005.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2005.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2006.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2006.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2007.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2007.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2008.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2008.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2009.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2009.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2010.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2010.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2011.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2011.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2012.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2012.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2013.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2013.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2014.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2014.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2015.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2015.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2016.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2016.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2017.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2017.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2018.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2018.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2019.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/03_filter_raw_normalized/stats_2019.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input/EPL/04_indicators_base_cumsum/away_2003.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/04_indicators_base_cumsum/away_2003.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input/EPL/04_indicators_base_cumsum/home_2003.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/EPL/04_indicators_base_cumsum/home_2003.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/c_create_table_by_team.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/c_create_table_by_team.py" afterDir="false" />
@@ -145,13 +77,21 @@
       <option name="project" value="LOCAL" />
       <updated>1593026071058</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Improvement of cumsum analysis of home/away teams">
+      <created>1593037280485</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593037280485</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Basic Poisson Analysis for EPL." />
     <MESSAGE value="Improvement of the list of teams in EPL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improvement of the list of teams in EPL" />
+    <MESSAGE value="Improvement of cumsum analysis of home/away teams" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improvement of cumsum analysis of home/away teams" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593027586775">
@@ -159,35 +99,35 @@
     </state>
     <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.830@0.23.1440.830" timestamp="1593025574786" />
     <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.831@0.23.1440.831" timestamp="1593027586775" />
-    <state x="297" y="23" width="846" height="830" key="CommitChangelistDialog2" timestamp="1593026070867">
+    <state x="297" y="23" width="846" height="831" key="CommitChangelistDialog2" timestamp="1593037279477">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state x="297" y="23" width="846" height="830" key="CommitChangelistDialog2/0.23.1440.830@0.23.1440.830" timestamp="1593013470680" />
-    <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.831@0.23.1440.831" timestamp="1593026070867" />
-    <state width="1419" height="215" key="GridCell.Tab.0.bottom" timestamp="1593037158468">
+    <state x="297" y="23" width="846" height="831" key="CommitChangelistDialog2/0.23.1440.831@0.23.1440.831" timestamp="1593037279477" />
+    <state width="1419" height="215" key="GridCell.Tab.0.bottom" timestamp="1593038022297">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state width="1419" height="215" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1593025904701" />
-    <state width="1419" height="215" key="GridCell.Tab.0.bottom/0.23.1440.831@0.23.1440.831" timestamp="1593037158468" />
-    <state width="1419" height="215" key="GridCell.Tab.0.center" timestamp="1593037158467">
+    <state width="1419" height="215" key="GridCell.Tab.0.bottom/0.23.1440.831@0.23.1440.831" timestamp="1593038022297" />
+    <state width="1419" height="215" key="GridCell.Tab.0.center" timestamp="1593038022297">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state width="1419" height="215" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1593025904700" />
-    <state width="1419" height="215" key="GridCell.Tab.0.center/0.23.1440.831@0.23.1440.831" timestamp="1593037158467" />
-    <state width="1419" height="215" key="GridCell.Tab.0.left" timestamp="1593037158467">
+    <state width="1419" height="215" key="GridCell.Tab.0.center/0.23.1440.831@0.23.1440.831" timestamp="1593038022297" />
+    <state width="1419" height="215" key="GridCell.Tab.0.left" timestamp="1593038022296">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state width="1419" height="215" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1593025904699" />
-    <state width="1419" height="215" key="GridCell.Tab.0.left/0.23.1440.831@0.23.1440.831" timestamp="1593037158467" />
-    <state width="1419" height="215" key="GridCell.Tab.0.right" timestamp="1593037158468">
+    <state width="1419" height="215" key="GridCell.Tab.0.left/0.23.1440.831@0.23.1440.831" timestamp="1593038022296" />
+    <state width="1419" height="215" key="GridCell.Tab.0.right" timestamp="1593038022297">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state width="1419" height="215" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1593025904700" />
-    <state width="1419" height="215" key="GridCell.Tab.0.right/0.23.1440.831@0.23.1440.831" timestamp="1593037158468" />
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1593026078184">
+    <state width="1419" height="215" key="GridCell.Tab.0.right/0.23.1440.831@0.23.1440.831" timestamp="1593038022297" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1593037287052">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.23.1440.830@0.23.1440.830" timestamp="1593013484442" />
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.23.1440.831@0.23.1440.831" timestamp="1593026078184" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.23.1440.831@0.23.1440.831" timestamp="1593037287052" />
   </component>
 </project>
