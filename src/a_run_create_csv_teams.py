@@ -35,10 +35,9 @@ def create_list_teams(teams: list) -> list:
     :param teams:
     :return:
     """
-    le = preprocessing.LabelEncoder()
     teams = list(set(teams))
-    le.fit(teams)
-    decod_teams = le.transform(teams)
+    teams.sort()
+    decod_teams = list(range(len(teams)))
     return decod_teams
 
 
@@ -54,6 +53,7 @@ def export_teams_csv(teams: list, decod_teams: list) -> None:
         writer.writerow(["NameTeam", "IdTeam"])
         writer.writerows(zip(teams, list(decod_teams)))
 
+### CREATE LIST OF TEAMS
 teams = read_files()
 decod_teams = create_list_teams(teams)
 export_teams_csv(teams, decod_teams)
