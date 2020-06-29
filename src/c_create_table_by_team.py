@@ -101,14 +101,14 @@ class CreateTable:
                         team_hist[item + "_last_" + str(period) + "_cumsum"] = team_hist[item].cumsum(skipna=True)
                         team_hist[item + "_last_" + str(period) + "_cumsum"] = team_hist[item + "_last_" + str(period) +
                                                                                          "_cumsum"] - team_hist[item]
-                        team_hist[item + "_last_" + str(period) + "_mean"] = team_hist[item + "_last_" + str(
+                        team_hist[item + "_last_" + str(period) + "_mean_by_team"] = team_hist[item + "_last_" + str(
                             period) + "_cumsum"] / \
                                                                              team_hist["nWeek" + Home_Away]
                     else:
                         team_hist[item + "_last_" + str(period) + "_cumsum"] = team_hist[item].rolling(period + 1).sum()
                         team_hist[item + "_last_" + str(period) + "_cumsum"] = team_hist[item + "_last_" + str(period) +
                                                                                          "_cumsum"] - team_hist[item]
-                        team_hist[item + "_last_" + str(period) + "_mean"] = team_hist[item + "_last_" + str(
+                        team_hist[item + "_last_" + str(period) + "_mean_by_team"] = team_hist[item + "_last_" + str(
                             period) + "_cumsum"] / \
                                                                              period
 

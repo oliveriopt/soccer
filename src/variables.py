@@ -30,6 +30,7 @@ periods = [3, 6, 10, "infinity"]
 years_train = list(range(2003, 2005))
 years_test = list(range(2014, 2020))
 all_years = list(range(2003, 2020))
+basic = 1
 
 features_games = ["idGame", "nWeekHome", "nWeekAway", "Date", "year", "IdHomeTeam", "IdAwayTeam", "FTHG",
                   "FTAG", "FTR", "HTHG", "HTAG",

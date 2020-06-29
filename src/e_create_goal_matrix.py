@@ -81,6 +81,9 @@ class CreateMatrix:
         result = result.rename(columns={'IdHomeTeam': "Id_Team_Home", 'IdAwayTeam': "Id_Team_Away"})
         return result
 
+    def basic(self):
+        pass
+    
     def save_files(self):
         avg_odds = CreateMatrix.odds_average(self)
         self.result.round(3).reset_index(drop=True).to_csv(var.probabilities + "prob_" + str(self.year) + ".csv")
@@ -100,3 +103,10 @@ class CreateMatrix:
                 self.result.at[ind, "Prob_H_last_" + str(period)] = list_prob[var.periods.index(period)][0]
                 self.result.at[ind, "Prob_D_last_" + str(period)] = list_prob[var.periods.index(period)][1]
                 self.result.at[ind, "Prob_A_last_" + str(period)] = list_prob[var.periods.index(period)][2]
+
+for year in var.all_years[:1]:
+    print(year)
+    game = CreateMatrix(year)
+    game.create_dataframe_home_away()
+    game.odds_average()
+    game.save_files()
